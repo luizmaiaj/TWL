@@ -10,18 +10,18 @@ protected:
 	Sprite m_Sprite;
 
 	// How long does a jump last
-	float m_JumpDuration;
+	float m_JumpDuration{ 0.f };
 
 	// Is character currently jumping or falling
-	bool m_IsJumping;
-	bool m_IsFalling;
+	bool m_IsJumping{ false };
+	bool m_IsFalling{ false };
 
 	// Which directions is the character currently moving in
-	bool m_LeftPressed;
-	bool m_RightPressed;
+	bool m_LeftPressed{ false };
+	bool m_RightPressed{ false };
 
 	// How long has this jump lasted so far
-	float m_TimeThisJump;
+	float m_TimeThisJump{ 0.f };
 
 	// Has the player just initialted a jump
 	bool m_JustJumped = false;
@@ -29,7 +29,7 @@ protected:
 	// Private variables and functions come next
 private:
 	// What is the gravity
-	float m_Gravity;
+	float m_Gravity{ 0.f };
 
 	// How fast is the character
 	float m_Speed = 400;

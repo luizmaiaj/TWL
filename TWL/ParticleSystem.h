@@ -10,8 +10,8 @@ class ParticleSystem : public Drawable
 private:
 	vector<Particle> m_Particles;
 	VertexArray m_Vertices;
-	float m_Duration;
-	bool m_IsRunning = false;
+	float m_Duration{ 0.f };
+	bool m_IsRunning{ false };
 
 
 public:

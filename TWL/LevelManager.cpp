@@ -53,8 +53,6 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 		m_StartPosition.y = 200;
 		m_BaseTimeLimit = 50.0f;
 		break;
-
-	
 	}
 
 	ifstream inputFile(levelToLoad);
@@ -86,8 +84,8 @@ int** LevelManager::nextLevel(VertexArray& rVaLevel)
 	int y = 0;
 	while (inputFile >> row)
 	{
-		for (int x = 0; x < (int)row.length(); x++) {
-
+		for (int x = 0; x < (int)row.length(); x++)
+		{
 			const char val = row[x];
 			arrayLevel[y][x] = atoi(&val);
 		}

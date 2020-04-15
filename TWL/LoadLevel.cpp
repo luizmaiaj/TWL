@@ -8,8 +8,8 @@ void Engine::loadLevel()
 	for (int i = 0; i < m_LM.getLevelSize().y; ++i)
 	{
 		delete[] m_ArrayLevel[i];
-
 	}
+
 	delete[] m_ArrayLevel;
 
 	// Load the next 2d array with the map for the level

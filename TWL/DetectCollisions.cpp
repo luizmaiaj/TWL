@@ -67,11 +67,9 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 				}
 			}
 
-
 			// Is character colliding with a regular block
 			if (m_ArrayLevel[y][x] == 1)
 			{
-
 				if (character.getRight().intersects(block))
 				{
 					character.stopRight(block.left);
@@ -80,7 +78,6 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 				{
 					character.stopLeft(block.left);
 				}
-
 
 				if (character.getFeet().intersects(block))
 				{
@@ -115,9 +112,7 @@ bool Engine::detectCollisions(PlayableCharacter& character)
 				// Character has reached the goal
 				reachedGoal = true;
 			}
-
 		}
-
 	}
 
 	// All done, return, wheteher or not a new level might be required

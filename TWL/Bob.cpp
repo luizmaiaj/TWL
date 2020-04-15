@@ -4,8 +4,7 @@
 Bob::Bob()
 {
 	// Associate a texture with the sprite
-	m_Sprite = Sprite(TextureHolder::GetTexture(
-		"graphics/bob.png"));
+	m_Sprite = Sprite(TextureHolder::GetTexture("graphics/bob.png"));
 
 	m_JumpDuration = .25f;
 }
@@ -16,7 +15,6 @@ bool Bob::handleInput()
 
 	if (Keyboard::isKeyPressed(Keyboard::Up))
 	{
-
 		// Start a jump if not already jumping
 		// but only if standing on a block (not falling)
 		if (!m_IsJumping && !m_IsFalling)

@@ -5,7 +5,6 @@ using namespace std;
 
 void Engine::populateEmitters(vector <Vector2f>& vSoundEmitters, int** arrayLevel)
 {
-
 	// Make sure the vector is empty
 	bool bOK = vSoundEmitters.empty();
 
@@ -22,10 +21,7 @@ void Engine::populateEmitters(vector <Vector2f>& vSoundEmitters, int** arrayLeve
 			{
 				// Skip over any fire tiles too 
 				// near a previous emitter
-				if (!FloatRect((float)x * TILE_SIZE,
-					(float)y * TILE_SIZE,
-					(float)TILE_SIZE,
-					(float)TILE_SIZE).intersects(previousEmitter))
+				if (!FloatRect((float)x * TILE_SIZE, (float)y * TILE_SIZE, (float)TILE_SIZE, (float)TILE_SIZE).intersects(previousEmitter))
 				{
 					// Add the coordiantes of this water block
 					vSoundEmitters.push_back(

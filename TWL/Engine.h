@@ -99,8 +99,7 @@ private:
 	bool detectCollisions(PlayableCharacter& character);
 	
 	// Make a vector of the best places to emit sounds from
-	void populateEmitters(vector <Vector2f>& vSoundEmitters,
-		int** arrayLevel);
+	void populateEmitters(vector <Vector2f>& vSoundEmitters, int** arrayLevel);
 
 	// A vector of Vector2f for the fire emiiter locations
 	vector <Vector2f> m_FireEmitters;
